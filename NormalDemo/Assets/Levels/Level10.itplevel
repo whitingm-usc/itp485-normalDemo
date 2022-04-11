@@ -1,0 +1,80 @@
+{
+    "metadata": {
+        "type": "itplevel",
+        "version": 2
+    },
+
+    "camera": {
+        "position": [ -200.0, 0.0, 0.0 ],
+        "rotation": [ 0.0, 0.0, 0.0, 1.0 ]
+    },
+
+    "lightingData": {
+        "ambient": [ 0.1, 0.1, 0.1 ],
+        "pointLights": [
+        ]
+    },
+
+    "renderObjects": [
+        {
+            "position": [ -200.0, 0.0, 0.0 ],
+            "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+            "scale": 0.5,
+            "mesh": "Assets/Meshes/LightSphere.itpmesh2",
+            "components": [
+                {
+                    "type": "PointLight",
+                    "diffuseColor": [ 1.0, 0.0, 0.0 ],
+                    "specularColor": [ 1.0, 0.5, 0.5 ],
+                    "specularPower": 10.0,
+                    "innerRadius": 100.0,
+                    "outerRadius": 300.0
+                }
+            ]
+        },
+        {
+            "position": [ 0.0, -200.0, 0.0 ],
+            "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+            "scale": 0.5,
+            "mesh": "Assets/Meshes/LightSphere.itpmesh2",
+            "components": [
+                {
+                    "type": "PointLight",
+                    "diffuseColor": [ 0.0, 0.0, 1.0 ],
+                    "specularColor": [ 0.5, 0.5, 1.0 ],
+                    "specularPower": 10.0,
+                    "innerRadius": 100.0,
+                    "outerRadius": 300.0
+                }
+            ]
+        },
+        {
+            "position": [ 0.0, 0.0, 200.0 ],
+            "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+            "scale": 0.5,
+            "mesh": "Assets/Meshes/LightSphere.itpmesh2",
+            "components": [
+                {
+                    "type": "PointLight",
+                    "diffuseColor": [ 0.0, 1.0, 0.0 ],
+                    "specularColor": [ 0.5, 1.0, 0.5 ],
+                    "specularPower": 10.0,
+                    "innerRadius": 100.0,
+                    "outerRadius": 300.0
+                }
+            ]
+        },
+        {
+            "position": [ 0.0, 0.0, 0.0 ],
+            "rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+            "scale": 100.0,
+            "mesh": "Assets/Meshes/Cube.itpmesh2",
+            "components": [
+                {
+                    "type": "SimpleRotate",
+                    "speed": 1.0
+                }
+            ]
+        }
+    ]
+}
